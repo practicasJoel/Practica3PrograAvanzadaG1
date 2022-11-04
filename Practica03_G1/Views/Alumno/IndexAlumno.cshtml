@@ -1,0 +1,40 @@
+﻿@model Practica03_G1.Models.ViewModel.AlumnoModelo
+
+@{ ViewBag.Title = "IndexAlumno"; }
+<h2>Index</h2>
+<form action="~/Alumno/Guardar" method="post">
+    <div class="container">
+        <div class="row">
+            @Html.LabelFor(d => d.carnet)
+            @Html.TextBoxFor(d => d.carnet, "", new { @class = "form-coontrol" });
+            @Html.ValidationMessageFor(d => d.carnet, "", new { @class = "text-danger" });
+            <br />
+            @Html.LabelFor(d => d.nombre)
+            @Html.TextBoxFor(d => d.nombre, "", new { @class = "form-coontrol" });
+            @Html.ValidationMessageFor(d => d.nombre, "", new { @class = "text-danger" });
+            <br />
+            @Html.LabelFor(d => d.apellido)
+            @Html.TextBoxFor(d => d.apellido, "", new { @class = "form-coontrol" });
+            @Html.ValidationMessageFor(d => d.apellido, "", new { @class = "text-danger" });
+            <br />
+            @Html.LabelFor(d => d.genero)
+            @Html.TextBoxFor(d => d.genero, "", new { @class = "form-coontrol" });
+            @Html.ValidationMessageFor(d => d.genero, "", new { @class = "text-danger" });
+            <br />
+            @Html.LabelFor(d => d.email)
+            @Html.TextBoxFor(d => d.email, "", new { @class = "form-coontrol" });
+            @Html.ValidationMessageFor(d => d.email, "", new { @class = "text-danger" });
+            <br />
+            @Html.LabelFor(d => d.telefono)
+            @Html.TextBoxFor(d => d.telefono, "", new { @class = "form-coontrol" });
+            @Html.ValidationMessageFor(d => d.telefono, "", new { @class = "text-danger" });
+            <br />
+            @Html.LabelFor(d => d.fecha_nacimiento)
+            @Html.TextBoxFor(d => d.fecha_nacimiento, "", new { @class = "form-coontrol" });
+            @Html.ValidationMessageFor(d => d.fecha_nacimiento, "", new { @class = "text-danger" });
+            <br />
+            <input type="submit" />
+        </div>
+    </div>
+
+</form>
